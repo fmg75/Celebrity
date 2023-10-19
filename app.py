@@ -9,7 +9,7 @@ import io
 model = InceptionResnetV1(pretrained='vggface2').eval()
 mtcnn = MTCNN(min_face_size=50, keep_all=False)
 
-## Cargar la variable de características desde el archivo "caracteristicas.pkl"
+# Cargar la variable de características desde el archivo "caracteristicas.pkl"
 with open("./caracteristicas.pkl", "rb") as f:
     caracteristicas = pickle.load(f)
 
